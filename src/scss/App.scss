@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+* {
+    font-family: 'PT Sans Narrow', sans-serif;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p,
+span {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none !important;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.display-none {
+    display: none;
+}
+
+:root {
+    --pureWhite: #ffffff;
+    --primaryBlack: #000000;
+}
+
+@mixin pointerItem {
+    cursor: pointer;
+    outline: none !important;
+}
+
+@mixin hiddenScroll {
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@mixin def-btn {
+    @include pointerItem();
+    display: flex;
+    align-items: center;
+    place-content: center;
+
+    padding: 5px 15px;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.txt-center {
+    text-align: center !important;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin defTxt {
+    font-size: var(--defTxtFontSize);
+}
+
+.def-txt {
+    @include defTxt();
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    /* phones */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
